@@ -1,0 +1,30 @@
+<img class="image" src="assets/background.jpg">
+<img class="profil" src="assets/prof.png">
+<p class="nom">NOM DU PROF</p>
+<button class="ajout" mat-button color="primary" (click)="openDialog()"><mat-icon>add</mat-icon>ajouter un cours</button>
+<mat-card class="detail" >
+    <mat-card class="mcard">
+        <ul>
+            <li class="info">nom:</li>
+            <mat-divider></mat-divider>
+            <li class="info">prenom:</li>
+            <mat-divider></mat-divider>
+            <li class="info">username:</li>
+            <mat-divider></mat-divider>
+            <li class="info">adresse-mail:</li>
+            <mat-divider></mat-divider>
+        </ul>
+        <button class="modifier" mat-button color="primary" (click)="openDialog2()" ><mat-icon>add</mat-icon>modifier les elements</button>
+    </mat-card>
+    <mat-card class="mcard">
+        <p class="sescours">MES COURS:</p> 
+        <ul>
+        <li><button class="" mat-button color="primary" >titre</button></li>
+        <mat-divider></mat-divider>
+        <li><button class="" mat-button color="primary">titre</button></li>
+        <mat-divider></mat-divider>
+        <li><button class="" mat-button color="primary">titre</button></li>
+        <mat-divider></mat-divider></ul>
+    </mat-card>
+    
+</mat-card>

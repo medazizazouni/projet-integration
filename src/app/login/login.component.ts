@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AjoututilComponent } from '../ajoututil/ajoututil.component';
 import { NavService } from '../service/nav.service';
 
 
@@ -20,7 +22,15 @@ export class LoginComponent implements OnInit {
   mdpFormControl = new FormControl('', [Validators.required]);
 
   matcher = new MyErrorStateMatcher()
-  constructor(public nav:NavService) { }
+  constructor(public nav:NavService, public dialog: MatDialog) { }
+  
+  openDialog(): void {
+    const dialogRef = this.dialog.open(AjoututilComponent, {
+      width: '500px',
+      height:'500px',
+    
+      
+    });}
 
   ngOnInit(): void {
     this.nav.hide();

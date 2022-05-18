@@ -26,7 +26,12 @@ import { ListcoursComponent } from './listcours/listcours.component';
 import { EnseignantsComponent } from './enseignants/enseignants.component';
 import { VoirplusComponent } from './voirplus/voirplus.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AjoutcoursComponent } from './ajoutcours/ajoutcours.component';
+import { AjoututilComponent } from './ajoututil/ajoututil.component';
 
+import {MatDialogModule} from '@angular/material/dialog';
+import { ProfilComponent } from './profil/profil.component';
+import { ModifpersoComponent } from './modifperso/modifperso.component';
 
 
 
@@ -41,6 +46,10 @@ import { HttpClientModule } from '@angular/common/http';
     ListcoursComponent,
     EnseignantsComponent,
     VoirplusComponent,
+    AjoutcoursComponent,
+    AjoututilComponent,
+    ProfilComponent,
+    ModifpersoComponent,
    
   ],
   imports: [
@@ -58,7 +67,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatDividerModule,
     ReactiveFormsModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
 
   ],
   providers: [],

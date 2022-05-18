@@ -1,0 +1,26 @@
+
+ 
+      
+        <h1>sign up</h1>
+      
+      <form class="example-form" [formGroup]="f">
+       <ul><li> 
+          <mat-form-field class="example-full-width">
+            <label for="name"></label>
+            <input id="name" matInput placeholder="Username" formControlName="name">
+          </mat-form-field>
+          </li>
+          <li>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Email" formControlName="mail">
+          </mat-form-field>
+          </li>
+          <li><mat-form-field class="example-full-width">
+            <input type="password" matInput placeholder="Password" formControlName="password">
+          </mat-form-field>
+          </li>
+       
+        <li><button mat-stroked-button  class="btn" type="submit">valider</button></li>
+      </ul>
+      </form>
+ 
